@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #e7e7e7 url("images/2.jpg") repeat;
+	font-family: Arial;
+	font-size: 13px;
+	color: black;
+	line-height: 20px;
+}
+
+
+a {
+	color: #0075d0;
+	text-decoration: underline;
+}
+
+p {
+	color: gray;
+	margin-bottom: 8px;
+}
+
+q {
+	font-family: Times, serif; 
+    font-style: italic; 
+    font-size: 16px;
+    color: blue; 
+}
+
+q:before {
+	content: ""— ";
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	line-height: normal;
+}
+
+h1 {
+	font-size: 24px;
+	color: white;
+	text-transform: capitalize;
+}
+
+h1::first-letter {
+	color: white;
+}
+
+h2 {
+	font-size: 16px;
+	color: white;
+}
+
+h3 {
+	font-size: 15px;
+	color: white;
+	margin: 7px 0;
+}
+
+a img {
+	border: none;
+	outline: none;
+}
+
+
+ul {
+	margin: 0 0 0 30px;
+}
+
+
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+/*Слайдер*/
+
+.slider {
+	margin-left: 221;
+	background-color: black;
+}
+
+.carousel {
+  width: 70%;
+  min-width: 1000px;
+	margin: 0 auto; 
+	position: relative;
+	line-height: 1;
+}
+
+.carousel-inner {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel .item > img {
+	display: block;
+  line-height: 1;
+  width: 100%;
+}
+
+.carousel .active,{
+	display: block;
+	left: 0;
+}
+
+.carousel .active.left {
+	left: -100%;
+}
+
+.carousel .active.right {
+	left: 100%;
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 10px 15px 5px;
+	background: #333333;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+/*Навигация*/
+ul.nav {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: black;
+}
+
+ul.nav li {
+	float: left;
+}
+
+ul.nav li a {
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+	padding: 6px 25px 7px;
+	display: block;
+}
+/*Контент*/
+.content {
+	background-color: rgba(0, 0, 0, 0.95);
+  	width: 70%;
+  	min-width: 1000px;
+	margin: 0 auto;
+	
+}
+
+.main {
+	padding: 20px;
+}
+
+.main img {
+	margin-right: 15px;
+	border: none;
+}

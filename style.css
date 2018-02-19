@@ -105,6 +105,8 @@ p{
 
 .works ul {
 	list-style-type: none;
+		border: 10px;
+	border-color: black; 
 }
 
 .works li {
